@@ -1,0 +1,273 @@
+html{
+	width:100%;
+	height:100%;
+	/*font-size:16px;*/
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+
+input{
+	outline:none;/*消除input点击后出现的蓝色边框*/
+	font-size:1.875rem;
+	color:rgb(255,255,255);
+}
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 0px black;
+ 
+  outline:none;
+  font-size:1.5rem;
+  color:rgb(255,255,255);
+ 
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+ 
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(../img/arrow.png) no-repeat scroll right center;
+  background-color:rgb(42,44,47);
+ 
+ 
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 0.875rem;
+}
+ 
+ 
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+a{
+	text-decoration:none;
+	outline:none;
+	color:rgb(255,255,255);
+}
+img{
+	max-width:100%;
+}
+body{
+	width:100%;
+	height:100%;
+}
+
+
+#first{
+	position:relative;
+	margin:0 auto;
+	padding:0px;
+	width:100%;
+	height:100%;
+	background-image:url(../img/bg.jpg);
+	background-repeat:no-repeat;
+	/*background-position:center center;*/
+	background-size:cover;
+	z-index:0;
+}
+#ad1{
+	z-index:1;
+	position: absolute;
+	width:89.73%;
+	height:18.28%;
+    left: 5.8%;
+    top: 23.45%;
+
+}
+#frame1{
+	width:80.93%;
+	height:64.84%;
+	z-index:1;
+	position: absolute;
+    left: 9.47%;
+    top:28.93%;
+}
+#frame1 img{
+	width:100%;
+    height:100%;
+}
+#blight{
+	z-index:1;
+	width:41.46%;
+    height:25.98%;
+	position: absolute;
+    left: 58.26%;
+    top: 17.04%;
+}
+.line{
+	position:absolute;
+	left:19.47%;
+	z-index:2;
+}
+#line1{
+	width:65.6%;
+	height:2.70%;
+	top:43.69%;
+}
+#line2{
+	width:65.6%;
+	height:2.70%;
+	top:50.98%;
+}
+#line3{
+	width:43.6%;
+	height:2.70%;
+	top:58.61%;
+}
+#code{
+	width:21.73%;
+	height:3.69%;
+	position:absolute;
+	left:63.6%;
+	top:57.79%;
+	cursor:pointer;
+	-webkit-cursor-visibility:pointer;
+	z-index:4;
+}
+
+#line4{
+	width:65.6%;
+	height:2.87%;
+	top:65.98%;
+}
+#line5{
+	width:65.6%;
+	height:2.70%;
+	top:73.36%;
+}
+
+.text{
+	font-size: 1.875rem;
+    font-family: "微软雅黑";
+    color: rgb(255, 255, 255);
+    line-height: 3.308;
+    -moz-transform: matrix( 0.90623927941512,0,0,0.90688701176238,0,0);
+    -webkit-transform: matrix( 0.90623927941512,0,0,0.90688701176238,0,0);
+    -ms-transform: matrix( 0.90623927941512,0,0,0.90688701176238,0,0);
+    font-style:italic;
+    z-index:3;
+
+}
+#text1{
+	position:absolute;
+	left:19.07%;
+	top:40.69%;
+}
+#text2{
+	position:absolute;
+	left:19.07%;
+	top:47.98%;
+}
+#text3{
+	position:absolute;
+	left:19.07%;
+	top:55.61%;
+}
+#text4{
+	position:absolute;
+	left:19.07%;
+	top:62.98%;
+}
+#text5{
+	position:absolute;
+	left:54.67%;
+	top:62.98%;
+}
+#text6{
+	position:absolute;
+	left:19.07%;
+	top:70.36%;
+}
+#name{
+	height:3.46%;
+	position:absolute;
+	left:45.07%;
+	top:42.99%;
+	background-color:transparent;
+	border:0px;
+	z-index:4;
+}
+#contact{
+	height:3.46%;
+	position:absolute;
+	left:44.07%;
+	top:49.98%;
+	background-color:transparent;
+	border:0px;
+	z-index:4;
+}
+#vertification{
+	height:3.46%;
+	position:absolute;
+	left:43.07%;
+	top:57.61%;
+	background-color:transparent;
+	border:0px;
+	z-index:4;
+}
+#province{
+	width:16%;
+	position:absolute;
+	left:37.07%;
+	top:65.74%;
+	z-index:5;
+}
+#city{
+	width:13.07%;
+	position:absolute;
+	left:71.87%;
+	top:65.74%;
+	z-index:5;
+}
+#agency{
+	width:46%;
+	position:absolute;
+	left:38.4%;
+	top:72.82%;
+	z-index:5;
+}
+#square{
+	width:3.3%;
+	height:2.05%;
+	position:absolute;
+	left:19.15%;
+	top:79.18%;
+	z-index:5;
+	/*鼠标为手型 */
+	cursor:pointer; 
+	-webkit-cursor-visibility:pointer;
+}
+#confirm{
+	font-size: 1.25rem;
+    font-family: "微软雅黑";
+    color: rgb(255, 255, 255);
+    line-height: 1.35;
+    position: absolute;
+    left: 24%;
+    top: 78.52%;
+    width: 59.87%;
+    height: 3.85%;
+    z-index: 2;
+
+}
+#submit_btn{
+	outline:none;
+	border:0px;
+	width:29.87%;
+	height:4.67%;
+	background:url(../img/submit.png) no-repeat scroll right center transparent;
+	background-size:cover;
+	position:absolute;
+	top:82.57%;
+	left:35.07%;
+	z-index:5;
+	cursor:pointer;
+	-webkit-cursor-visibility:pointer;
+}
+#selected{
+	width:3.2%;
+    height:3.03%;
+	position:absolute;
+	top:77.91%;
+	left:19.6%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>领奖失败</title>
+    <link href = "css/finish.css" rel = "stylesheet" type = "text/css"/>
+    <style>
+        @media screen and (max-device-width:320px){
+            html{
+                font-size:30px;
+            }
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        @media screen and (min-device-width:321px) and (max-device-width:749px){
+            html{
+                font-size:30px;
+            }
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        @media screen and (min-device-width:750px) and (max-device-width:1024px){
+            html{
+                font-size:26px;
+            }
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        @media screen and (min-device-width:1025px) {
+            html {
+                font-size: 20px;
+            }
+
+            #ending {
+                width: 750px;
+                height: 1220px;
+            }
+            #frame4 img{
+                width:100%;
+                height:85%;
+            }
+            #warn{
+                top:45%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id = "ending">
+       <div id = "frame4"><img src = "img/frame4.png" alt = "frame"/></div>
+       <div id = "blight"><img src = "img/blight3.png" alt = "blight"/></div>
+       <p id = "warn">活动太火爆啦<br/>奖品已被领完</p> <!--如果未能抽到奖，这段话更改为：很遗憾<br/>您未中奖<br/>谢谢您的参与 （对应更改css）-->
+   </div>
+</body>
+</html>

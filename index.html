@@ -1,0 +1,364 @@
+ <!DOCTYPE html>
+ <!--还需解决安卓手机打开输入键盘页面缩小的问题，以及尝试使用Tap和touch事件-->
+<html>
+	<head>
+		<?php header("Content-Type:text/html;charset=utf-8"); ?>
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "width = device-width,initial-scale = 0.5, user-scalable = no"/>
+		<title>赢购车优惠券</title>
+		<link href = "css/main.css" rel = "stylesheet" type = "text/css" />
+        <style>
+            @media screen and (max-device-width:320px){
+                html{
+                    font-size:14px;
+                }
+                #submit_btn{
+                    width:32.01%;
+                    height:4.67%;
+                    position:absolute;
+                    top:85.57%;
+                    left:35.07%;
+                }
+                /*#frame1{
+                    height:70.84%;
+                }*/
+                #frame1 img{
+                    height:100%;
+                }
+            }
+			@media screen and (min-device-width:321px) and (max-device-width:375px) {
+				html {
+					font-size: 16px;
+				}
+				#frame1 img {
+					height: 100%;
+				}
+				#submit_btn {
+					width: 39.01%;
+					height: 5.67%;
+					position: absolute;
+					top: 85.15%;
+					left: 31.07%;
+					background-size:contain;
+				}
+			}
+			@media screen and (min-device-width:321px) and (max-device-width:375px) and (min-device-height:668px){
+				#blight{
+					position: absolute;
+					top: 19.54%;
+				}
+			}
+			@media screen and (min-device-width:376px) and (max-device-width:414px){
+				html {
+					font-size: 16px;
+				}
+				#frame1 img {
+					height: 100%;
+				}
+				#blight{
+					position: absolute;
+					left: 60.96%;
+					top: 18.54%;
+				}
+				#submit_btn {
+					width: 40.01%;
+					height: 5.67%;
+					position: absolute;
+					top: 84.85%;
+					left: 29.07%;
+					background-size:contain;
+				}
+				#province{
+					width:13.98%;
+					position:absolute;
+					left:36.02%;
+					top:65.74%;
+					z-index:5;
+				}
+				#text5{
+					position:absolute;
+					left:50.67%;
+					top:62.98%;
+				}
+				#city{
+					width:13.07%;
+					position:absolute;
+					left:65.87%;
+					top:65.74%;
+					z-index:5;
+				}
+				#agency{
+					width:42%;
+					position:absolute;
+					left:36.4%;
+				}
+				#code{
+					position:absolute;
+					left:59.6%;
+				}
+			}
+			@media screen and (min-device-width:415px) and (max-device-width:480px){
+				html{
+					font-size:16px;
+				}
+				#city{
+					font-size:1.3rem;
+				}
+				#frame1 img{
+					height:100%;
+				}
+				#blight{
+					position:absolute;
+					left: 63.66%;
+					top: 17.54%;
+				}
+				.line{
+					position:absolute;
+					left:22.47%;
+					z-index:2;
+				}
+				#text1{
+					position:absolute;
+					left:21.87%;
+				}
+				#text2{
+					position:absolute;
+					left:21.57%;
+				}
+				#text3{
+					position:absolute;
+					left:21.57%;
+				}
+				#text4{
+					position:absolute;
+					left:21.57%;
+				}
+				#text6{
+					position:absolute;
+					left:21.57%;
+				}
+				#province{
+					left:37.17%;
+					width:11.4%;
+					font-size:1.3rem;
+				}
+				#text5{
+					position:absolute;
+					left:50.67%;
+				}
+				#city{
+					width:12.07%;
+					position:absolute;
+					left:64.87%;
+				}
+				#agency{
+					width:38%;
+					position:absolute;
+					left:38.4%;
+				}
+				#square{
+					position:absolute;
+					left:22.15%;
+				}
+				#confirm{
+					position: absolute;
+					left: 25.4%;
+
+				}
+				#code{
+					position:absolute;
+					left:58.6%;
+				}
+				#submit_btn{
+					background-size:contain;
+					position:absolute;
+					top:84.97%;
+				}
+				#selected{
+					position:absolute;
+					top:78.01%;
+					left:22.6%;
+				}
+			}
+			@media screen and (min-device-width:481px) and (max-device-width:749px){
+				html{
+					font-size:22px;
+				}
+				#frame1 img{
+					height:100%;
+				}
+				#blight{
+					position:absolute;
+					left: 70.46%;
+					top: 21.24%;
+				}
+				.line{
+					position:absolute;
+					left:22.47%;
+					z-index:2;
+				}
+				.line img{
+					width:95%;
+				}
+				#line1{
+					width:65.6%;
+				}
+				#text1{
+					position:absolute;
+					left:22.97%;
+				}
+				#text2{
+					position:absolute;
+					left:22.47%;
+				}
+				#text3{
+					position:absolute;
+					left:22.47%;
+				}
+				#text4{
+					position:absolute;
+					left:22.47%;
+				}
+				#text6{
+					position:absolute;
+					left:22.47%;
+				}
+				#province{
+					left:39.37%;
+					width:15.1%;
+					font-size:1.3rem;
+				}
+				#text5{
+					position:absolute;
+					left:54.97%;
+				}
+				#city{
+					width:14.07%;
+					position:absolute;
+					left:70.87%;
+				}
+				#agency{
+					width:38%;
+					position:absolute;
+					left:46.4%;
+				}
+				#square{
+					position:absolute;
+					left:22.47%;
+				}
+				#confirm{
+					position: absolute;
+					left: 25.6%;
+				}
+				#code{
+					width:21.73%;
+					height:3.69%;
+					position:absolute;
+					left:64.62%;
+				}
+				#code img{
+					width:100%;
+				}
+				#submit_btn{
+					background-size:contain;
+					position:absolute;
+					top:84.97%;
+				}
+				#selected{
+					position:absolute;
+					top:78.71%;
+					left:22.6%;
+				}
+			}
+			@media screen and (min-device-width:750px) and (max-device-width:1024px) {
+				html {
+					font-size: 26px;
+				}
+
+				#first {
+					width: 1500px;
+					height: 100%;
+				}
+
+				#first img {
+					width: 100%;
+					height: 100%;
+				}
+
+				#frame1 img {
+					height: 100%;
+				}
+
+				#blight {
+					position: absolute;
+					top: 16.54%;
+				}
+
+				#submit_btn {
+					background-size: contain;
+					position: absolute;
+					top: 84.57%;
+					left: 35.07%;
+				}
+
+				#confirm {
+					font-size: 1.35rem;
+				}
+			}
+			@media screen and (min-device-width:1025px){
+				html{
+					font-size:16px;
+				}
+				#first{
+					width:750px;
+					height:1220px;
+				}
+				#blight{
+					top: 16.04%;
+				}
+				#submit_btn{
+					background-size:contain;
+					top:84.57%;
+				}
+			}
+
+        </style>
+	</head>
+	<body>
+		<!-- <?php echo "adasd";?> -->
+		<div id = "first">
+			<!--<div id = "ad1"><img src = "img/ad1.png" alt = "填写信息即抽爆米花套餐 型鲨宝骏530购车优惠券" /></div>-->
+			<div id = "frame1"><img src = "img/frame1.png" alt = "frame" /></div>
+			<div id = "blight"><img src = "img/blight.png" alt = "blight" /></div>
+			<div class = "line" id = "line1"><img src = "img/line.png" alt = "line" /></div>
+			<div class = "line" id = "line2"><img src = "img/line.png" alt = "line" /></div>
+			<div class = "line" id = "line3"><img src = "img/line2.png" alt = "line" /></div>
+			<div id = "code"><img src = "img/vCode.png" alt = "get code" /></div>
+			<div class = "line" id = "line4"><img src = "img/line3.png" alt = "line" /></div>
+			<div class = "line" id = "line5"><img src = "img/line.png" alt = "line" /></div>
+			<!--<div id = "select_prov"><img src = "img/arrow.png" alt = "arrow" /> </div>-->
+			<form id = "draw_form" name="draw_form" action="service.php" method="post">
+				<label for = "name"><span class = "text" id = "text1">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span></label>
+				<input id = "name" type = "text" name = "name" size = "20" />
+				<label for = "contact"><span class = "text" id = "text2">联系方式:</span></label>
+				<input id = "contact" type = "text" name = "contact" size = "20" />
+				<label for = "vertification"><span class = "text" id = "text3">验&nbsp;证&nbsp;码:</span></label>
+				<input id = "vertification" type = "text" name = "vertification" size = "6" />
+				<span class = "text" id = "text4">省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份:</span>
+				<select id = "province" name = "province"></select>
+				<span class = "text" id = "text5">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市:</span>
+				<select id = "city" name = "city"></select>
+				<span class = "text" id = "text6">经&nbsp;销&nbsp;商:</span>
+				<select id = "agency" name = "agency"></select>
+
+				<input type = "hidden" name = "action" value = "addwinner" id = "action"/>
+			</form>
+			<div id = "square"><img src = "img/square.png" alt = "confirm" /> </div>
+			<!--<div id = "selected"></div>-->
+			<span id = "confirm"><a href = "statement.html" title = "查看协议内容">*本人同意《用户信息保护及对策声明》。上汽通用五菱将对您提交的个人信息保密，不对外公开</a></span>
+			<botton value = "" id = "submit_btn" name = "submit" />
+		</div>
+		<script src = "js/jquery-3.3.1.min.js"></script>
+		<script src = "js/main.js"></script>
+	</body>
+</html>

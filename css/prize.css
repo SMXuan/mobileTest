@@ -1,0 +1,128 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+html{
+    font-size:24px;
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+
+img{
+    max-width:100%;
+}
+#getPrize{
+    width:100%;
+    height:100%;
+    position:relative;
+    margin: 0 auto;
+    background-image:url(../img/prize-bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:0;
+}
+#ad3{
+    position:absolute;
+    left:9.9%;
+    top:18.45%;
+    z-index:2;
+}
+#frame3{
+    width:80.93%;
+    height:75.98%;
+    position:absolute;
+    left:9.47%;
+    top:15.41%;
+    z-index:1;
+}
+#blight{
+    width:41.47%;
+    height:25.98%;
+    position:absolute;
+    left:58.4%;
+    top:3.13%;
+    z-index:2;
+}
+#exchange_code{
+    width:38.13%;
+    height:3.44%;
+    position:absolute;
+    left:13.87%;
+    top:36.89%;
+    z-index:2;
+}
+.text{
+    font-family: "微软雅黑";
+    color: rgb(255, 255, 255);
+
+}
+#text1{
+    font-size:1.25rem;
+    font-style:italic;
+    line-height:3.308;
+    -moz-transform: matrix( 0.88875451642089,0,0,0.89240529625823,0,0);
+    -webkit-transform: matrix( 0.88875451642089,0,0,0.89240529625823,0,0);
+    -ms-transform: matrix( 0.88875451642089,0,0,0.89240529625823,0,0);
+    position: absolute;
+    left: 17.57%;
+    top: 31.61%;
+    z-index:2;
+
+}
+#text2{
+    font-size:1.46rem;
+    line-height: 1.283;
+    -moz-transform: matrix( 0.62531796891246,0,0,0.62788661772453,0,0);
+    -webkit-transform: matrix( 0.62531796891246,0,0,0.62788661772453,0,0);
+    -ms-transform: matrix( 0.62531796891246,0,0,0.62788661772453,0,0);
+    position: absolute;
+    left:17.2%;
+    top: 36.72%;
+    z-index: 2;
+
+}
+#text3{
+    font-size:0.58rem;
+    line-height: 4.824;
+    -moz-transform: matrix( 1.37320574162679,0,0,1.38181818181818,0,0);
+    -webkit-transform: matrix( 1.37320574162679,0,0,1.38181818181818,0,0);
+    -ms-transform: matrix( 1.37320574162679,0,0,1.38181818181818,0,0);
+    position: absolute;
+    left:27.07%;
+    top: 37.75%;
+    z-index:2;
+
+}
+#code{
+    width:29.07%;
+    height:17.87%;
+    position:absolute;
+    left:55.2%;
+    top:25.36%;
+    z-index:2;
+}
+#prize{
+    width:48.67%;
+    height:18.11%;
+    position:absolute;
+    left:25.47%;
+    top:44.51%;
+    z-index:2;
+}
+#ticket{
+    width:68.53%;
+    height:24.75%;
+    position:absolute;
+    left:16.21%;
+    top:64.26%;
+    z-index:2;
+}
+#ad4{
+    position:absolute;
+    left:6.8%;
+    top:13.28%;
+    z-index:1;
+    display:none;
+}
